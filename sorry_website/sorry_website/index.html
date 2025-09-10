@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>I'm Sorry — For You</title>
+  <style>
+    :root {
+      --accent: #FF7AA2;
+      --background: #fff;
+      --text-color: #333;
+      --card-bg: #f9f9f9;
+      --small-text: #666;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background: var(--background);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header.header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    header > div:first-child {
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .small {
+      color: var(--small-text);
+      font-size: 0.9rem;
+    }
+
+    nav.nav a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+      margin-left: 15px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav.nav a:hover {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    nav.nav a.active {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    main {
+      margin-bottom: 40px;
+    }
+
+    section.card.hero {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section.card.hero > div {
+      flex: 1 1 300px;
+      min-width: 280px;
+    }
+
+    h1 {
+      font-weight: 900;
+      color: var(--accent);
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .praise-list {
+      margin-top: 25px;
+    }
+
+    .praise {
+      background: white;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      border-left: 5px solid var(--accent);
+      font-style: italic;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgb(255 122 162 / 0.2);
+    }
+
+    .poem {
+      font-style: italic;
+      color: var(--accent);
+      margin-top: 25px;
+      font-weight: 600;
+      border-left: 4px solid var(--accent);
+      padding-left: 15px;
+    }
+
+    button {
+      cursor: pointer;
+      padding: 10px 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      background-color: var(--accent);
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e65585;
+    }
+
+    button.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 2px solid rgba(255, 122, 162, 0.7);
+      margin-left: 8px;
+    }
+
+    button.secondary:hover {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    /* Fix for your card center content */
+
+    .card.center {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .card.center > div {
+      flex: 1 1 250px;
+      min-width: 220px;
+    }
+
+    .card.small {
+      background: #fff0f6;
+      border-radius: 8px;
+      padding: 15px 18px;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 6px rgb(255 122 162 / 0.15);
+    }
+
+    ul {
+      margin: 12px 0 0 20px;
+      padding: 0;
+      list-style-type: disc;
+      color: var(--text-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      font-weight: 600;
+      color: var(--small-text);
+      border-top: 1px solid var(--accent);
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 700px) {
+      section.card.hero {
+        flex-direction: column;
+      }
+
+      .card.center {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo" aria-label="Heart symbol">♥︎</div>
+      <div>
+        <div style="font-weight:800">For My Sweetheart ❤️‍🩹</div>
+        <div class="small">The only person I want to be with for the rest of my life</div>
+      </div>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="sorry.html">Sorry</a>
+        <a href="about.html">About You</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card hero">
+        <div>
+          <h1>I'm sorry — and you know, I love you a lot pakhi.</h1>
+          <p>Trust me jannn, my intention wasn't meant to hurt you!! How do I hurt you? I all belong to you. Your smile
+            is the only thing that could make my day beautiful even though it's been the worst.</p>
+
+          <div class="praise-list" aria-label="Praises">
+            <div class="praise">Your eyes hold a universe I never knew I needed.</div>
+            <div class="praise">Your smile is the kind of magic that turns an ordinary day into something special.</div>
+            <div class="praise">The sweetness you have in your voice could melt my heart like it was made to hear your
+              voice.</div>
+            <div class="praise">I need you here more and more with me till the last breath.</div>
+          </div>
+
+          <p class="poem">"Not being poetic but trust me, nowadays I see the reason for my living in your eyes. Seems like
+            you hold my whole life even though it's all yours💗 my heart will beat for you always."</p>
+
+          <div style="margin-top:14px;">
+            <button onclick="location.href='sorry.html'">Read my apology</button>
+            <button class="secondary" onclick="location.href='about.html'">Why I do love you?</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="card center" role="region" aria-label="To the most beautiful and quick love notes">
+            <div style="text-align:center">
+              <div style="font-size:22px;font-weight:800;color:var(--accent)">To the most beautiful</div>
+              <div style="margin-top:10px" class="small">
+                I don't have more pictures of the love of my life (I won't need jaann till you meet me daily)
+              </div>
+            </div>
+
+            <div style="margin-top:12px" class="card small">
+              Quick love notes:
+              <ul>
+                <li>You mean a lot jaann, I can't even make you realize that.</li>
+                <li>I won't say that you keep a soft corner of my mind, cause you're my heart! It's none but yours💗.
+                </li>
+                <li>The way you be jealous with other girls made me feel like yaa that's what I want from my girl.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Made for my world.
+    </footer>
+  </div>
+
+  <script>
+    // Light interactivity: enable simple quote replacing
+    function insertApology() {
+      document.getElementById('apology-text').innerText = "I'm sorry. I messed up, and I'm truly sorry for hurting you. Please forgive me.";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For You My Love</title>
+  <style>
+    :root {
+      --accent: #FF7AA2;
+      --background: #fff;
+      --text-color: #333;
+      --small-text: #666;
+      --card-bg: #f9f9f9;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background: var(--background);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header.header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 2rem;
+      color: var(--accent);
+      user-select: none;
+    }
+
+    header > div:first-child {
+      font-weight: 800;
+      font-size: 1.1rem;
+      max-width: 60%;
+    }
+
+    .small {
+      color: var(--small-text);
+      font-size: 0.9rem;
+      margin-top: 6px;
+    }
+
+    nav.nav a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+      margin-left: 15px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav.nav a:hover {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    nav.nav a.active {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    main {
+      margin-bottom: 40px;
+    }
+
+    section.card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .praise-list {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 15px;
+    }
+
+    .praise {
+      background: white;
+      padding: 10px 14px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgb(255 122 162 / 0.15);
+      font-weight: 600;
+      flex: 1 1 40%;
+      min-width: 160px;
+      color: var(--text-color);
+    }
+
+    .poem {
+      font-style: italic;
+      margin-top: 14px;
+      font-weight: 600;
+      border-left: 4px solid var(--accent);
+      padding-left: 15px;
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      font-weight: 600;
+      color: var(--small-text);
+      border-top: 1px solid var(--accent);
+      margin-top: 40px;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .praise-list {
+        flex-direction: column;
+      }
+
+      .praise {
+        flex: 1 1 100%;
+        min-width: auto;
+      }
+
+      header.header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header > div:first-child {
+        max-width: 100%;
+        margin-top: 10px;
+      }
+
+      nav.nav {
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      nav.nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo" aria-label="Heart symbol">♥︎</div>
+      <div>
+        <div style="font-weight:800">For My Home Ministry</div>
+        <div class="small">
+          You really come here to check why do I love you? Sorry Jannnn, I can't explain it in one night.
+          If I start to praise your beauty, it will take a long life for me.
+          So why spend time on that? I need to marry you and give you the best days of your life till my last breath.
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="sorry.html">Sorry</a>
+        <a href="about.html" class="active" aria-current="page">About You</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card" aria-labelledby="about-you-heading">
+        <h2 id="about-you-heading">About You — Why Do I Love You</h2>
+        <p class="small">
+          Why wouldn't I love you? There are millions of reasons to fall in love with you.
+          And I have many important works like thinking about you all day,
+          so I don't want to say a million lines right now.
+          But yes, just because you are the person I love the most,
+          I want to let you know the major reasons.
+        </p>
+
+        <h1>I love:</h1>
+
+        <div class="praise-list">
+          <div class="praise">Your eyes</div>
+          <div class="praise">Your voice</div>
+          <div class="praise">Your smile</div>
+          <div class="praise">Everything that makes you happy</div>
+          <div class="praise">Everything related to you</div>
+          <div class="praise">When you act like you’re mine</div>
+          <div class="praise">Holding your hand — it makes me feel you’re mine</div>
+          <div class="praise">The queen of flowers (you, I mean)</div>
+          <div class="praise">The way you talk</div>
+          <div class="praise">The way you look at me</div>
+          <div class="praise">The way you make me jealous</div>
+          <div class="praise">The way you show me anger in your eyes</div>
+          <div class="praise">The way we make eye contact every time</div>
+          <div class="praise">The way you become jealous sometimes</div>
+          <div class="praise">The way you held my hand last day in the rain</div>
+          <div class="praise">Because you’re the best, Pakhi.</div>
+        </div>
+
+        <div style="margin-top: 20px;">
+          <h3>Poem for you</h3>
+          <p class="poem">
+            Since you called me “premik purush” (lover man), I have to write something for sure.<br />
+            But to be honest, I’m still a bit (KACHA and KOCHI KHOKA) in poems.<br />
+            I’ll keep saying things in person that will make you happy, so please forgive me.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Made for my Queen
+    </footer>
+  </div>
+
+  <script>
+    // Light interactivity: enable simple quote replacing
+    function insertApology() {
+      document.getElementById('apology-text').innerText =
+        "I'm sorry. I messed up, and I'm truly sorry for hurting you. Please forgive me.";
+    }
+  </script>
+</body>
+
+</html>

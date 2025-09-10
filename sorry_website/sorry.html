@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Please Forgive Me</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">♥︎</div>
+      <div>
+        <div style="font-weight:800">For My Love</div>
+        <div class="small">A little place where I say sorry and celebrate you</div>
+      </div>
+      <nav class="nav">
+        
+    <a href="index.html" class="">Home</a>
+    <a href="sorry.html" class="active">Sorry</a>
+    <a href="about.html" class="">About You</a>
+    <a href="gallery.html" class="">Gallery</a>
+    <a href="contact.html" class="">Contact</a>
+    
+      </nav>
+    </header>
+
+    <main>
+      
+<section class="card">
+  <h2>My apology</h2>
+  <p id="apology-text">I want to say I'm sorry. I know words can't erase what happened but I promise to learn and to be better.</p>
+  <div style="margin-top:12px;">
+    <button onclick="insertApology()">Show sincere message</button>
+  </div>
+
+  <div style="margin-top:14px">
+    <h3>Why I'm sorry</h3>
+    <p class="small">I was thoughtless. I let a moment become a mistake. You deserved compassion and I failed to give it. I take responsibility and want to make amends.</p>
+
+    <h3 style="margin-top:12px">How I'll make it right</h3>
+    <ul class="small">
+      <li>Listen more and judge less.</li>
+      <li>Be present when we talk.</li>
+      <li>Show appreciation every day.</li>
+      <li>Give you the space and kindness you need.</li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+
+    <footer>
+      Made with sincerity — You mean the world to me.
+    </footer>
+  </div>
+<script>
+  // Light interactivity: enable simple quote replacing
+  function insertApology(){
+    document.getElementById('apology-text').innerText = "I'm sorry. I messed up, and I'm truly sorry for hurting you. Please forgive me.";
+  }
+</script>
+</body>
+</html>
